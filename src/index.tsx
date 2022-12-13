@@ -8,7 +8,7 @@ import { store } from "./redux/store";
 
 if (process.env.NODE_ENV === "development") {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const { worker } = require("./mocks/handlers.ts");
+  const { worker } = require("./mocks/browser.ts");
   worker.start();
 }
 
